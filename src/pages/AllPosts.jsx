@@ -8,7 +8,6 @@ function AllPosts() {
     const userdata = useSelector((state) => state.auth.userData);
     const [msg,setmsg]=useState("User Has not Uploaded any Blog!");
     let userId;
-    console.log(userdata.userData);
 
     if (userdata?.$id) {
         userId = userdata?.$id;
@@ -22,10 +21,10 @@ function AllPosts() {
             const fetchPosts = async () => {
                 try {
                     const result = await database_services.getPosts();
-                    console.log(result);
+                    // console.log(result);
                     setPosts(result || []);
                 } catch (err) {
-                    console.log("Error fetching posts:", err);
+                    // console.log("Error fetching posts:", err);
                     setPosts([]); 
                 }
             };
