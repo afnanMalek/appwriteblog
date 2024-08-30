@@ -7,6 +7,6 @@ const conf = {
 };
 
 
-console.log('AppWrite Configuration:', conf);
+
 
 export default conf;
