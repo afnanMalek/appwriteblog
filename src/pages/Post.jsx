@@ -60,8 +60,8 @@ export default function Post() {
                         <h1 className="text-4xl font-bold text-gray-800">{post.title}</h1>
                     </div>
 
-                    <div className="prose lg:prose-xl max-w-none">
-                        <p className="text-red-800">{parse(post.content)}</p>
+                    <div className="prose lg:prose-xl max-w-none text-gray-800">
+                        <p className="text-gray-800">{parse(post.content)}</p>
                     </div>
 
                     {isAuthor && (
