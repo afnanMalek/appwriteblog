@@ -61,7 +61,7 @@ export default function Post() {
                     </div>
 
                     <div className="prose lg:prose-xl max-w-none">
-                        <p>{parse(post.content)}</p>
+                        <p text-black>{parse(post.content)}</p>
                     </div>
 
                     {isAuthor && (
